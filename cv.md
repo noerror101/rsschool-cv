@@ -7,6 +7,8 @@ Phone: +375 33 618 62 08
  
 [Telegram: @Diana_Kasper](https://t.me/Diana_Kasper)
 
+Discord: Noerror606(Noerror606) #0672
+
 ## About Me  ##
 
 The main purpose of the article is FrontEnd programmer. Learn the basic technologies of Web development. My strengths are stress resistance and multitasking. 
