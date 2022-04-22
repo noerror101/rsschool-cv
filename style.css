@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #212529;
+}
+
+/*обнуление*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+/*-------------------*/
+
+.wrapper{
+    max-width: 1339px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+    margin-bottom: 108px;
+}
+
+.navigation{
+    max-width: 429px;
+    width: 100%;   
+    max-height: 47px;
+    height: 100%;
+}   
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#active-item{
+    color: #FFB742;
+
+}
+.item-navigation a{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.btn{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #212529;
+    padding: 12px 26px;
+    background: #FFB742;
+    border-radius: 50px;
+    border: 2px solid #FFB742;
+}
+
+.btn:hover{
+    background: #fcc56e;
+}
+
+.information-youself{
+    max-width: 759px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.hello{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 51px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.name-youself{
+    text-decoration-line: underline;
+    color: #FFB742;
+}
+h1{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 91px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+.quote{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 51px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 22px;
+}
+.avatar{
+    max-width: 210px;
+    width: 100%;
+    margin-bottom: 126px;
+}
+
+.achievement-youself{
+    display: flex;
+    justify-content: space-between;
+}
+
+.achievement-card{
+    display: flex;
+    max-width: 416px;
+    width: 100%;
+    background: rgba(56, 62, 69, 0.44);
+    border-radius: 10px;
+}
+
+.image-card{
+    margin-right: 56px;
+}
+.title-information-card{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFB742;
+}
+
+.subtitle-information-card{ 
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 31px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
