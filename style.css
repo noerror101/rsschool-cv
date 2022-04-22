@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@700&display=swap');
 body{
     margin: 0;
     padding: 0;
@@ -21,12 +21,14 @@ li{
 /*-------------------*/
 
 .wrapper{
-    max-width: 1339px;
+    max-width: 1300px;
     margin: 0 auto;
+    padding: 0 39px;
 }
 
 .header{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-top: 17px;
     margin-bottom: 108px;
@@ -35,8 +37,6 @@ li{
 .navigation{
     max-width: 429px;
     width: 100%;   
-    max-height: 47px;
-    height: 100%;
 }   
 
 .nav{
@@ -128,16 +128,17 @@ h1{
 }
 
 .achievement-card{
-    display: flex;
-    max-width: 416px;
+    max-width: 390px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 30px;
     background: rgba(56, 62, 69, 0.44);
     border-radius: 10px;
 }
 
-.image-card{
-    margin-right: 56px;
-}
+
 .title-information-card{
     font-family: 'Inter';
     font-weight: 700;
@@ -156,4 +157,125 @@ h1{
     text-align: center;
     text-transform: capitalize;
     color: #FFFFFF;
+}
+
+.yourself{
+    margin-bottom: 208px;
+}
+
+.about{
+    max-width: 1308px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 165px;
+}
+
+.about-information{
+    max-width: 640px;
+    width: 100%;
+    
+}
+
+.header-title{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #FFB742;
+
+    
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50px;
+
+    padding: 6px 25px;
+    margin-bottom: 17px;
+   
+}
+
+h2{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    
+    color: #FFFFFF;
+
+}
+
+p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #D5D5D5;
+}
+
+.about-information h2{
+    margin-top: 17px;
+    margin-bottom: 30px;
+}
+
+.about-information button{
+    margin-top: 40px;
+}
+
+.skill{
+    display: flex;
+    justify-content: space-between;
+}
+.skill-information{
+    max-width: 546px;
+}
+
+.skill-information h2{
+    margin-top: 18px;
+    margin-bottom: 30px;
+}
+
+.skill-information p{
+    margin-bottom: 30px;
+}
+
+.skills-card{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/************прогресс бар***********/
+
+.progress-bar {
+    width: 100%;
+    max-width: 380px;
+    height: 20px;
+    background: #212529;
+    border-radius: 1000px;
+    margin: 0 auto;
+  }
+  
+  .progress-bar > div {
+    width: 0%;
+    height: 100%;
+  }
+
+  /*****************/
+
+  .skill-card{
+    display: flex;
+    align-items: center;
+    background: #383E45;
+    border-radius: 10px;
+    max-width: 500px;
+    justify-content: space-around;
+    margin-bottom: 50px;  
+}
+.skill-card ul{
+    margin: 0 90px;
+}
+.skill-image{
+    padding: 10px 14px;
 }
