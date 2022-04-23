@@ -10,6 +10,12 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+*, :before, :after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
 }
 a{
     text-decoration: none;
@@ -225,6 +231,7 @@ p{
 .skill{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 167px;
 }
 .skill-information{
     max-width: 546px;
@@ -279,3 +286,140 @@ p{
 .skill-image{
     padding: 10px 14px;
 }
+
+.project{
+    margin: 0 auto;
+    margin-bottom: 167px;
+}
+
+.project-title{
+    text-align:center;
+    margin-bottom: 60px;
+}
+
+
+.education{
+    text-align: center;
+}
+
+.education h2{
+    margin: 15px 0 50px;
+}
+.education-timeline{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 167px;
+}
+
+.timeline {
+    margin: 30px;
+    position: relative;
+}
+.timeline li {
+    display: flex;
+    line-height: 1;
+}
+.timeline--date {
+    flex: 0 0 150px;
+    color: #F2C94C;;
+    font-family: Roboto;
+    text-align: center;
+    margin-right: 50px;
+}
+.timeline--circle {
+    flex: 0 0 50px;
+    position: relative;
+    text-align: center;
+   /*For vertical line*/
+}
+.timeline--circle:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    background: #F2C94C;
+    margin: auto;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+.timeline--circle i {
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    display: inline-block;
+    background: #F2C94C;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    z-index: 3;
+}
+.timeline--description {
+    margin-left: 50px;
+    padding-bottom: 100px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+
+}
+/*For the first timeline item*/
+.timeline li:first-child .timeline--date, .timeline li:first-child .timeline--description {
+    margin-top: 15px;
+}
+.timeline li:first-child .timeline--circle:before {
+    margin-top: 15px;
+}
+.timeline li:first-child .timeline--circle:after {
+    content: "";
+    background: transparent;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #F2C94C;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+    z-index: 1;
+}
+.timeline li:first-child i {
+    background: transparent;
+    width: 40px;
+    height: 40px;
+}
+.timeline li:first-child i:after {
+    content: '';
+    background: #F2C94C;;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+/*Now let us start do the hover effects*/
+.timeline li:hover .timeline--date {
+    color: #F2C94C;;
+}
+.timeline li:hover .timeline--circle i {
+    transform: scale(4);
+}
+.timeline li:hover .timeline--description {
+    color: #F2C94C;;
+}
+.timeline li:first-child:hover .timeline--circle i {
+    transform: none;
+    background: #F2C94C;;
+}
+.timeline li:first-child:hover .timeline--circle:after {
+    border-color: #222;
+}
+/***************/
+
