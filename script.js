@@ -1,4 +1,8 @@
 const barList = document.getElementsByClassName('progress-bar')
+const burger = document.querySelector('.header-burger')
+const menu = document.querySelector('.navigation')
+const navLink = document.querySelectorAll('.item-navigation')
+
 
 function init() {
   for (let i = 0; i < barList.length; i++) {
@@ -29,3 +33,18 @@ function fillUp() {
 init()
 fillUp()
 
+burger.addEventListener('click', mobileMenu)
+
+
+function mobileMenu(){
+  burger.classList.toggle('active');
+  menu.classList.toggle('active');
+}
+
+
+navLink.forEach( n => n.addEventListener('click', closeMenu));
+
+function closeMenu(){
+  burger.classList.remove('active')
+  menu.classList.remove('active')
+}
