@@ -1,2 +1,3 @@
-rsschool-cv 
- https://noerror606.github.io/rsschool-cv/index
+ rsschool-cv-html
+ https://noerror101.github.io/rsschool-cv
+
