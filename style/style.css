@@ -104,6 +104,9 @@ p{
     padding: 10px;
 }
 
+.header-burger{
+    display: none;
+}
 #active-item{
     color: #FFB742;
 
@@ -121,7 +124,7 @@ p{
 /************************************/
 
 .information-youself{
-    max-width: 759px;
+    max-width: 760px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -302,116 +305,36 @@ p{
 .education h2{
     margin: 15px 0 50px;
 }
-.education-timeline{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 167px;
-}
 
-.timeline li {
+.education-timeline {
     display: flex;
-    line-height: 3;
-}
-.timeline-date {
-    flex: 0 0 150px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+    }
+
+.date-education{
     color: #F2C94C;;
     text-align: center;
-    margin-right: 50px;
 }
-.timeline-circle {
-    flex: 0 0 50px;
-    position: relative;
-    text-align: center;
-   /*For vertical line*/
+
+.line{
+    width: 4px;
+    height: 145px;
+    background-color: #F2C94C;
+    margin: 20px 0px; 
 }
-.timeline-circle:before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 5px;
-    background: #F2C94C;
-    margin: auto;
-    right: 0;
-    left: 0;
-    z-index: 2;
-}
-.timeline-circle i {
-    transition: all 0.4s ease-in-out;
-    position: relative;
-    display: inline-block;
-    background: #F2C94C;
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    box-sizing: border-box;
-    z-index: 3;
-}
-.timeline-description {
-    margin-left: 20px;
-    padding-bottom: 100px;
+
+.education-card{
     font-family: "Work Sans";
     font-weight: 500;
     font-size: 17.9888px;
     line-height: 36px;
     color: #FFFFFF;
+}
 
-}
-/*For the first timeline item*/
 
-.timeline li:first-child .timeline-circle:before {
-    margin-top: 15px;
-}
-.timeline li:first-child .timeline-circle:after {
-    content: "";
-    background: transparent;
-    box-sizing: border-box;
-    width: 40px;
-    height: 40px;
-    border: 2px solid #F2C94C;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border-radius: 50%;
-    z-index: 1;
-}
-.timeline li:first-child i {
-    background: transparent;
-    width: 40px;
-    height: 40px;
-}
-.timeline li:first-child i:after {
-    content: '';
-    background: #F2C94C;;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    display: inline-block;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-/*Now let us start do the hover effects*/
-.timeline li:hover .timeline-date {
-    color: #F2C94C;;
-}
-.timeline li:hover .timeline-circle i {
-    transform: scale(4);
-}
-.timeline li:hover .timeline-description {
-    color: #F2C94C;;
-}
-.timeline li:first-child:hover .timeline-circle i {
-    transform: none;
-    background: #F2C94C;;
-}
-.timeline li:first-child:hover .timeline-circle:after {
-    border-color: #222;
-}
-/***************/
+
 .english{
     text-align: center;
     margin-bottom: 100px;
@@ -539,6 +462,8 @@ pre code {
       background-color: #F2C94C;
       padding: 5px;
       border-radius: 20px;
+      width: 100px;
+      height: 100px;
   }
 
   @media (max-width: 1200px) { 
@@ -727,7 +652,7 @@ pre code {
     
     h2 {
         font-size: 4vw;
-    line-height: 117%;
+        line-height: 117%;
         margin-top: 3px;
     }
     p{
@@ -756,12 +681,14 @@ pre code {
         width: 150px;
     }
     .work img{
-        width: 270px;
+        
+        width: 30%;
+       
     }
     .card-code{
         max-width: 200px;
-    padding: 0px 8px;
-    font-size: 11px;
+        padding: 0px 8px;
+        font-size: 11px;
     }
     .footer{
         padding: 29px 0px;
@@ -844,19 +771,6 @@ pre code {
 
     .education h2 {
         margin: 5px 0px 35px 0px;    
-    }
-    .timeline-date {
-        flex: 0 0 100px;
-    }
-    .timeline-description {
-    padding-bottom: 85px;
-    margin-left: 15px;
-    font-size: 13.9888px;
-    }
-    .timeline-circle {
-        flex: 0 0 100px;
-        position: relative;
-        text-align: center;
     }
 
     .sertificat-english {
@@ -945,6 +859,16 @@ pre code {
   }
 
   @media (max-width: 485px) {
+      h2{
+        font-size: 20px;
+      }
+      p{
+          font-size: 14px;
+          line-height: 15pxpx;
+      }
+      .achievement-card{
+          display: none;
+      }
       .avatar{
         margin-bottom: 40px;
       }
@@ -955,14 +879,32 @@ pre code {
         display: none;
     }
     .about-information p {
-        font-size: 2.5vw;
-        line-height: 155%;
+        font-size: 14px;
+        line-height: 170%;
     }
     .about-information {
         width: 100%;
     }
     .about-information {
         text-align: center;
+    }
+    .btn{
+        font-size: 20px;
+        line-height: 23px;
+        padding: 8px 22px;
+    }
+    .skill{
+        display: block;
+    }
+    .skill-information{
+        text-align: center;
+    }
+    .skills-card {
+        margin: 0 auto;
+        max-width: 60%;
+        }
+    .nonbutton{
+        display: none;
     }
     .skills-card ul{
         padding: 32px 0;
@@ -985,7 +927,34 @@ pre code {
     .contact{
         width: 55%;
     }
-    .rolling{
-    width: 7%;
+    .information-english{
+    display: none;
     }
-  }
+    .sertificat{
+        width: 80%;
+    }
+}
+
+@media (max-width: 401px){
+    .card-code {
+        line-height: 14px;
+        font-size: 8px;
+        max-width: 25%;
+    }
+    .name, .first-name {
+        font-size: 0.7em;
+    }
+    .profesion {
+        font-size: 7px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    .contact-items{
+        display: block;
+        text-align: center;
+    }
+    .work img {
+        width: 70%;
+    }
+}
